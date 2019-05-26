@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfHM_Student.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfHM_Student"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FFB2B1AD" Offset="0.729"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Введите ФИО" Margin="102,57,562,313" RenderTransformOrigin="0.5,0.5" Background="#FF24A5FF">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.096"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox Name="fullName" Margin="293,58,146,315" />
+            <Label Content="Введите группу" Margin="100,142,567,235" Background="#FF6DA2FF"/>
+            <TextBox Name="group" Margin="293,141,146,235" />
+        <Button Content="Сохранить" Margin="81,329,84,45" Style="{DynamicResource ResourceKey=MaterialDesignFlatAccentButton}"  Click="Button_Click" Foreground="#FF010006" Height="45" Background="#FFF70202" />
+  
+        </Grid>
+</Window>
